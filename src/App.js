@@ -4,14 +4,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import { createGlobalStyle } from 'styled-components';
-
-const GlobalStyle = createGlobalStyle`
-    // body {
-    //   background: #000;
-    //   color: #fff;
-    // }
-  `;
+import GlobalStyle from './GlobalStyle';
 
 function App() {
   return (
