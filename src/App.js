@@ -15,6 +15,7 @@ function App() {
         <Switch>
           <Route exact path="/">Home</Route>
           <Route path="/search">Search</Route>
+          <Route>404 - Not Found</Route>
         </Switch>
       </div>
     </Router>
