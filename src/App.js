@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
+import Header from './Header';
 import GlobalStyle from './GlobalStyle';
 import theme from './theme';
 
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <Normalize />
         <GlobalStyle />
+        <Header />
         <Switch>
           <Route exact path="/">Home</Route>
           <Route path="/search">Search</Route>
