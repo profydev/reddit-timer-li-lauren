@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import { Normalize } from 'styled-normalize';
 import GlobalStyle from './GlobalStyle';
 
 function App() {
