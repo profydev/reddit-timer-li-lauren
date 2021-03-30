@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
     src: url("/fonts/Bitter-Regular.woff2") format("woff2"),
  url("/fonts/Bitter-Regular.woff") format("woff");
   }
-  
+
   body {
     font-family: ${(props) => props.theme.font.family.default};
     font-size: ${(props) => props.theme.font.size.default};
