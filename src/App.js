@@ -3,12 +3,20 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
-} from "react-router-dom";
+} from 'react-router-dom';
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+    // body {
+    //   background: #000;
+    //   color: #fff;
+    // }
+  `;
 
 function App() {
   return (
     <Router>
+      <GlobalStyle />
       <div>
         App Placeholder
         <Switch>
