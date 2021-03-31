@@ -36,7 +36,7 @@ function Header() {
         <img src={logo} alt="logo" className="logo" />
       </Link>
       <nav>
-        <Link to="/search" className="link">Search</Link>
+        <Link to="/search/javascript" className="link">Search</Link>
         <a href="/#how-it-works" className="link">How it works</a>
         <a href="/#about" className="link">About</a>
       </nav>
