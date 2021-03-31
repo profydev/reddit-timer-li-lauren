@@ -16,7 +16,7 @@ const HeaderSection = styled.div`
   }
 
   nav {
-    margin-top: 41px;
+    margin-top: 39px;
     margin-right: 80px;
   }
 
