@@ -49,7 +49,9 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${(props) => props.theme.font.size.default};
     line-height: ${(props) => props.theme.font.lineHeight.default};
     color: ${(props) => props.theme.color.text};
+    width: 1440px;
   }
+
 `;
 
 export default GlobalStyle;
