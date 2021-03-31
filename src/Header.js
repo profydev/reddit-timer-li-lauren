@@ -5,10 +5,13 @@ import logo from './images/logo.png';
 function Header() {
   return (
     <header>
+      <Link to="/">
+        <img src={logo} alt="logo" />
+      </Link>
       <nav>
-        <Link to="/">
-          <img src={logo} alt="logo" />
-        </Link>
+        <Link to="/search">Search</Link>
+        <a href="/#how-it-works">How it works</a>
+        <a href="/#about">About</a>
       </nav>
     </header>
   );
