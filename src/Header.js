@@ -1,9 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from './images/logo.png';
 
 function Header() {
   return (
     <header>
-      Header Placeholder
+      <nav>
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
+      </nav>
     </header>
   );
 }
