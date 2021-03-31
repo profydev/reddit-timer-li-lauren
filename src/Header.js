@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from './images/logo.png';
 
-const HeaderSection = styled.div`
+const HeaderSection = styled.header`
   height: 100px;
   display: flex;
   justify-content: space-between;
