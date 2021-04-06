@@ -5,18 +5,17 @@ import { Normalize } from 'styled-normalize';
 import { GlobalStyle, theme } from '../style';
 import Header from '../common/header';
 
-
 function App() {
   return (
     <ThemeProvider theme={theme}>
-        <Normalize />
-        <GlobalStyle />
-        <Header />
-        <Switch>
-          <Route exact path="/">Home</Route>
-          <Route path="/search">Search</Route>
-          <Route>404 - Not Found</Route>
-        </Switch>
+      <Normalize />
+      <GlobalStyle />
+      <Header />
+      <Switch>
+        <Route exact path="/">Home</Route>
+        <Route path="/search">Search</Route>
+        <Route>404 - Not Found</Route>
+      </Switch>
     </ThemeProvider>
   );
 }
