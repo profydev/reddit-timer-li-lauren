@@ -1,46 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import logo from './images/logo.png';
-
-const HeaderSection = styled.header`
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-
-  .logo {
-    width: 150px;
-    height: 36px;
-    margin-left: 80px;
-    margin-top: 32px;
-  }
-
-  nav {
-    margin-top: 39px;
-    margin-right: 80px;
-  }
-
-  .link {
-    font-size: 16px;
-    color: #636363;
-    text-decoration: none;
-    line-height: 20px;
-    margin-left: 25px;
-  }
-`;
+import * as S from './Header.style';
 
 function Header() {
   return (
-    <HeaderSection>
+    <S.Container>
       <Link to="/">
-        <img src={logo} alt="logo" className="logo" />
+        <S.Logo />
       </Link>
       <nav>
-        <Link to="/search/javascript" className="link">Search</Link>
-        <a href="/#how-it-works" className="link">How it works</a>
-        <a href="/#about" className="link">About</a>
+        <S.Link to="/search/javascript">Search</S.Link>
+        <S.Link to="/#how-it-works">How it works</S.Link>
+        <S.Link to="/#about">About</S.Link>
       </nav>
-    </HeaderSection>
+    </S.Container>
   );
 }
 
