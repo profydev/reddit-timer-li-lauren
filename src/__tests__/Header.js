@@ -24,8 +24,10 @@ const setup = (initialPath = '/') => {
 };
 
 test('navigates to home page when logo is clicked', () => {
+  // set initial page to be the search page
   setup('/search/javascript');
 
+  // can use file name since Jest doesn't render the SVG but replaces it w/ file name
   const logoLink = screen.getByRole('link', { name: /logo\.svg/i });
   userEvent.click(logoLink);
 
