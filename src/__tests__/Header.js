@@ -29,5 +29,15 @@ test('navigates to home page when logo is clicked', () => {
   const logoLink = screen.getByRole('link', { name: /logo\.svg/i });
   userEvent.click(logoLink);
 
-  expect(screen.getByText(/home/i)).toBeInTheDocument();
+  expect(screen.getByText(/home page/i)).toBeInTheDocument();
+});
+
+test('navigates to search page when search link is clicked', () => {
+  const { history } = setup();
+
+  const searchLink = screen.getByRole('link', { name: /search/i });
+  userEvent.click(searchLink);
+
+  expect(screen.getByText(/search page/i)).toBeInTheDocument();
+  expect(history.location.pathname).toEqual('/search/javascript');
 })

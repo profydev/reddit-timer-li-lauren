@@ -12,8 +12,8 @@ function App() {
       <GlobalStyle />
       <Header />
       <Switch>
-        <Route exact path="/">Home</Route>
-        <Route path="/search">Search</Route>
+        <Route exact path="/">Home Page</Route>
+        <Route path="/search">Search Page</Route>
         <Route>404 - Not Found</Route>
       </Switch>
     </ThemeProvider>
