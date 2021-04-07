@@ -6,12 +6,12 @@ import App from '../app';
 
 const setup = (initialPath = '/') => {
   // access history as described in docs
-  
+
   let history;
   render(
     <MemoryRouter initialEntries={[initialPath]}>
       <App />
-      <Route 
+      <Route
         path="*"
         render={(props) => {
           history = props.history;
@@ -48,12 +48,12 @@ test.each`
   link | hash
   ${'About'} | ${'#about'}
   ${'How it works'} | ${'#how-it-works'}
-  `('navigates to "$link" section when "$link" link is clicked', ({ link, hash}) => {
-    const { history } = setup('/search/javascript');
+  `('navigates to "$link" section when "$link" link is clicked', ({ link, hash }) => {
+  const { history } = setup('/search/javascript');
 
-    const hashLink = screen.getByRole('link', { name: link });
-    userEvent.click(hashLink);
+  const hashLink = screen.getByRole('link', { name: link });
+  userEvent.click(hashLink);
 
-    expect(screen.getByText(/home page/i)).toBeInTheDocument();
-    expect(history.location.hash).toEqual(hash);
-  });
+  expect(screen.getByText(/home page/i)).toBeInTheDocument();
+  expect(history.location.hash).toEqual(hash);
+});
